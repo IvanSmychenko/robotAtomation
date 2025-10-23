@@ -1,0 +1,24 @@
+# Python кэш и скомпилированные файлы
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Пути к виртуальному окружению
+venv/
+.env/
+.envrc/
+env/
+
+# Логи и отчёты Robot Framework
+output.xml
+log.html
+report.html
+*.log
+
+# IDE файлы (например, PyCharm)
+.idea/
+.vscode/
+
+# Файлы системы
+.DS_Store
+Thumbs.db
