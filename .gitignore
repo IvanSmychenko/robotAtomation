@@ -10,10 +10,8 @@ venv/
 env/
 
 # Логи и отчёты Robot Framework
-output.xml
-log.html
-report.html
-*.log
+results/
+log/
 
 # IDE файлы (например, PyCharm)
 .idea/
