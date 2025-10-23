@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.4 on win32)" generated="20251023 23:41:00.545" rpa="false" schemaversion="3">
+<suite id="s1" name="robotAtomation" source="C:\Users\smych\PycharmProjects\pythonProject\robotAtomation">
+<suite id="s1-s1" name="Tests" source="C:\Users\smych\PycharmProjects\pythonProject\robotAtomation\tests">
+<suite id="s1-s1-s1" name="Onboarding" source="C:\Users\smych\PycharmProjects\pythonProject\robotAtomation\tests\Onboarding">
+<suite id="s1-s1-s1-s1" name="Onboarding Deny Location Confirm Town" source="C:\Users\smych\PycharmProjects\pythonProject\robotAtomation\tests\Onboarding\Onboarding_Deny_Location_Confirm_Town.robot">
+<kw name="Suite Setup" library="common" type="SETUP">
+<doc>Действия перед запуском тест-сьюита</doc>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>20s</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20251023 23:41:01.038" endtime="20251023 23:41:01.038"/>
+</kw>
+<status status="PASS" starttime="20251023 23:41:01.037" endtime="20251023 23:41:01.039"/>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="Allow Location And Change Town" line="12">
+<kw name="Launch App" library="common" type="SETUP">
+<doc>Просто запустить приложение</doc>
+<kw name="Open App" library="launcher">
+<doc>Старт приложения на устройстве с конфигурацией сетевого слоя</doc>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=${CONNECTION_URL}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>udid=${UDID}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20251023 23:41:01.048" endtime="20251023 23:41:04.298"/>
+</kw>
+<status status="PASS" starttime="20251023 23:41:01.047" endtime="20251023 23:41:04.299"/>
+</kw>
+<status status="PASS" starttime="20251023 23:41:01.046" endtime="20251023 23:41:04.299"/>
+</kw>
+<kw name="Open App" library="launcher">
+<doc>Старт приложения на устройстве с конфигурацией сетевого слоя</doc>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=${CONNECTION_URL}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>udid=${UDID}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20251023 23:41:04.300" endtime="20251023 23:41:07.655"/>
+</kw>
+<status status="PASS" starttime="20251023 23:41:04.300" endtime="20251023 23:41:07.655"/>
+</kw>
+<kw name="Deny Location" library="onboarding">
+<doc>Запретить геолокацию</doc>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ONBORDING_SUBMIT_BTN}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20251023 23:41:11.595" level="INFO">criteria is ru.afisha.android:id/fragOnboardinSubmitBtn
+criteria is ru.afisha.android:id/fragOnboardinSubmitBtn
+criteria is ru.afisha.android:id/fragOnboardinSubmitBtn
+criteria is ru.afisha.android:id/fragOnboardinSubmitBtn
+criteria is ru.afisha.android:id/fragOnboardinSubmitBtn
+criteria is ru.afisha.android:id/fragOnboardinSubmitBtn
+criteria is ru.afisha.android:id/fragOnboardinSubmitBtn
+criteria is ru.afisha.android:id/fragOnboardinSubmitBtn
+criteria is ru.afisha.android:id/fragOnboardinSubmitBtn
+criteria is ru.afisha.android:id/fragOnboardinSubmitBtn
+criteria is ru.afisha.android:id/fragOnboardinSubmitBtn</msg>
+<status status="PASS" starttime="20251023 23:41:07.658" endtime="20251023 23:41:11.595"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ONBORDING_SUBMIT_BTN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20251023 23:41:11.599" level="INFO">Clicking element 'ru.afisha.android:id/fragOnboardinSubmitBtn'.</msg>
+<msg timestamp="20251023 23:41:11.781" level="INFO">criteria is ru.afisha.android:id/fragOnboardinSubmitBtn</msg>
+<status status="PASS" starttime="20251023 23:41:11.596" endtime="20251023 23:41:11.782"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${PERMISSION_DENY_BUTTON}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20251023 23:41:12.924" level="INFO">criteria is com.android.permissioncontroller:id/permission_deny_button
+criteria is com.android.permissioncontroller:id/permission_deny_button</msg>
+<status status="PASS" starttime="20251023 23:41:11.782" endtime="20251023 23:41:12.924"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${PERMISSION_DENY_BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20251023 23:41:12.927" level="INFO">Clicking element 'com.android.permissioncontroller:id/permission_deny_button'.</msg>
+<msg timestamp="20251023 23:41:13.074" level="INFO">criteria is com.android.permissioncontroller:id/permission_deny_button</msg>
+<status status="PASS" starttime="20251023 23:41:12.924" endtime="20251023 23:41:13.075"/>
+</kw>
+<status status="PASS" starttime="20251023 23:41:07.656" endtime="20251023 23:41:13.075"/>
+</kw>
+<kw name="Confirm Town" library="onboarding">
+<doc>Подтвердить выбранный город</doc>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ONBORDING_CONFIRM_CITY_BTN}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20251023 23:41:14.238" level="INFO">criteria is android:id/button1
+criteria is android:id/button1</msg>
+<status status="PASS" starttime="20251023 23:41:13.078" endtime="20251023 23:41:14.238"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ONBORDING_CONFIRM_CITY_BTN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20251023 23:41:14.241" level="INFO">Clicking element 'android:id/button1'.</msg>
+<msg timestamp="20251023 23:41:14.434" level="INFO">criteria is android:id/button1</msg>
+<status status="PASS" starttime="20251023 23:41:14.239" endtime="20251023 23:41:14.435"/>
+</kw>
+<status status="PASS" starttime="20251023 23:41:13.077" endtime="20251023 23:41:14.435"/>
+</kw>
+<if>
+<branch type="IF" condition="${PLATFORM_VERSION} &gt;= 13">
+<kw name="Allow Notifications" library="onboarding">
+<doc>Разрешить уведомления</doc>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ONBORDING_SUBMIT_BTN}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20251023 23:41:15.035" level="INFO">criteria is ru.afisha.android:id/fragOnboardinSubmitBtn</msg>
+<status status="PASS" starttime="20251023 23:41:14.438" endtime="20251023 23:41:15.036"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ONBORDING_SUBMIT_BTN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20251023 23:41:15.038" level="INFO">Clicking element 'ru.afisha.android:id/fragOnboardinSubmitBtn'.</msg>
+<msg timestamp="20251023 23:41:15.247" level="INFO">criteria is ru.afisha.android:id/fragOnboardinSubmitBtn</msg>
+<status status="PASS" starttime="20251023 23:41:15.036" endtime="20251023 23:41:15.248"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${PERMISSION_ALLOW}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20251023 23:41:16.322" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_button</msg>
+<status status="PASS" starttime="20251023 23:41:15.248" endtime="20251023 23:41:16.323"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${PERMISSION_ALLOW}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20251023 23:41:16.326" level="INFO">Clicking element 'com.android.permissioncontroller:id/permission_allow_button'.</msg>
+<msg timestamp="20251023 23:41:16.498" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_button</msg>
+<status status="PASS" starttime="20251023 23:41:16.323" endtime="20251023 23:41:16.499"/>
+</kw>
+<status status="PASS" starttime="20251023 23:41:14.438" endtime="20251023 23:41:16.499"/>
+</kw>
+<status status="PASS" starttime="20251023 23:41:14.437" endtime="20251023 23:41:16.499"/>
+</branch>
+<status status="PASS" starttime="20251023 23:41:14.437" endtime="20251023 23:41:16.499"/>
+</if>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${VERTICAL_FEATURED_IMAGE}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20251023 23:41:19.103" level="INFO">criteria is ru.afisha.android:id/itemTileEventIv
+criteria is ru.afisha.android:id/itemTileEventIv</msg>
+<status status="PASS" starttime="20251023 23:41:16.501" endtime="20251023 23:41:19.104"/>
+</kw>
+<kw name="Close App" library="common" type="TEARDOWN">
+<doc>Закрыть приложение</doc>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20251023 23:41:19.106" endtime="20251023 23:41:19.703"/>
+</kw>
+<status status="PASS" starttime="20251023 23:41:19.105" endtime="20251023 23:41:19.703"/>
+</kw>
+<doc>Онбординг с запретом геолокации и подтверждением выбранного города</doc>
+<status status="PASS" starttime="20251023 23:41:01.039" endtime="20251023 23:41:19.704"/>
+</test>
+<kw name="Suite Teardown" library="common" type="TEARDOWN">
+<doc>Действия после окончания тест-сьюита</doc>
+<kw name="Pass Execution" library="BuiltIn">
+<arg>message=Прогон завершен</arg>
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<msg timestamp="20251023 23:41:19.713" level="INFO">Execution passed with message:
+Прогон завершен</msg>
+<status status="PASS" starttime="20251023 23:41:19.713" endtime="20251023 23:41:19.713"/>
+</kw>
+<status status="PASS" starttime="20251023 23:41:19.711" endtime="20251023 23:41:19.714">Прогон завершен</status>
+</kw>
+<doc>Подключение старта, предисловий, постусловия и закрытия приложения</doc>
+<status status="PASS" starttime="20251023 23:41:00.630" endtime="20251023 23:41:19.714"/>
+</suite>
+<status status="PASS" starttime="20251023 23:41:00.621" endtime="20251023 23:41:19.729"/>
+</suite>
+<status status="PASS" starttime="20251023 23:41:00.609" endtime="20251023 23:41:19.736"/>
+</suite>
+<status status="PASS" starttime="20251023 23:41:00.552" endtime="20251023 23:41:19.741"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="robotAtomation">robotAtomation</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">robotAtomation.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Onboarding">robotAtomation.Tests.Onboarding</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Onboarding Deny Location Confirm Town">robotAtomation.Tests.Onboarding.Onboarding Deny Location Confirm Town</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

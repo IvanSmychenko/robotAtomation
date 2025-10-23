@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.14.0 on win32)" generated="20251020 22:57:46.529" rpa="false" schemaversion="3">
+<suite id="s1" name="Onboarding Allow Location Confirm Town" source="C:\Users\smych\PycharmProjects\pythonProject\robotAtomation\tests\Onboarding\Onboarding_Allow_Location_Confirm_Town.robot">
+<test id="s1-t1" name="Allow Location And Change Town" line="6">
+<kw name="Open App" library="launcher">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=http://127.0.0.1:4723</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=16</arg>
+<arg>deviceName=Pixel 7</arg>
+<arg>udid=2C161FDH200DL6</arg>
+<arg>appPackage=ru.afisha.android</arg>
+<arg>appActivity=ru.afishaog.android.presentation.app.AppActivity</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20251020 22:57:47.031" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20251020 22:57:47.031" endtime="20251020 22:57:47.037"/>
+</kw>
+<msg timestamp="20251020 22:57:47.038" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20251020 22:57:47.039" level="FAIL">AttributeError: 'NoneType' object has no attribute 'ca_certs' and no __dict__ for setting new attributes</msg>
+<status status="FAIL" starttime="20251020 22:57:47.030" endtime="20251020 22:57:47.040"/>
+</kw>
+<status status="FAIL" starttime="20251020 22:57:47.029" endtime="20251020 22:57:47.040"/>
+</kw>
+<kw name="Allow Location" library="onboarding">
+<doc>Разрешить геолокацию</doc>
+<status status="NOT RUN" starttime="20251020 22:57:47.041" endtime="20251020 22:57:47.041"/>
+</kw>
+<kw name="Confirm Town" library="onboarding">
+<doc>Подтвердить выбранный город</doc>
+<status status="NOT RUN" starttime="20251020 22:57:47.041" endtime="20251020 22:57:47.041"/>
+</kw>
+<kw name="Allow Notifications" library="onboarding">
+<doc>Разрешить уведомления</doc>
+<status status="NOT RUN" starttime="20251020 22:57:47.041" endtime="20251020 22:57:47.041"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>locator=ru.afisha.android:id/itemTileEventIv</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20251020 22:57:47.041" endtime="20251020 22:57:47.041"/>
+</kw>
+<doc>Онбординг с разрешением геолокации и подтверждением выбранного города</doc>
+<status status="FAIL" starttime="20251020 22:57:47.028" endtime="20251020 22:57:47.041">AttributeError: 'NoneType' object has no attribute 'ca_certs' and no __dict__ for setting new attributes</status>
+</test>
+<status status="FAIL" starttime="20251020 22:57:46.554" endtime="20251020 22:57:47.042"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Onboarding Allow Location Confirm Town">Onboarding Allow Location Confirm Town</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20251020 22:57:47.038" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

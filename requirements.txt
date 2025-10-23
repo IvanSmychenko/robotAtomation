@@ -1,0 +1,5 @@
+robotframework==6.0.2
+robotframework-appiumlibrary==2.0.0
+selenium==4.25.0
+Appium-Python-Client==3.2.1
+robotframework-robocop==5.3.0
